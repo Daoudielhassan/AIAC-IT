@@ -9,8 +9,6 @@ export function HomeComponent() {
     <main>
      <Header />
       <HeroSection />
-      <EventsSection />
-      <FeaturedProjectsSection />
       <MeetTheTeamSection />
       <Contact />
     </main>
