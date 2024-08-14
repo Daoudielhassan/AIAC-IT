@@ -17,7 +17,6 @@ export function FeaturedProjectsSection() {
         <Carousel opts={{ align: "start", slidesPerView: "auto", spaceBetween: 16 }} className="w-full">
           <CarouselContent>
             {[
-              { title: "Smart Home Automation", description: "A comprehensive home automation system that integrates with various smart devices.", imgSrc: "/placeholder.svg", imgAlt: "Smart Home Automation" },
               { title: "AI-Powered Chatbot", description: "A conversational AI assistant that can help with a variety of tasks.", imgSrc: "/placeholder.svg", imgAlt: "AI-Powered Chatbot" },
               { title: "Blockchain-based Supply Chain", description: "A decentralized supply chain management system built on blockchain technology.", imgSrc: "/placeholder.svg", imgAlt: "Blockchain-based Supply Chain" }
             ].map((project) => (

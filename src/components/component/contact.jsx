@@ -43,11 +43,11 @@ export function Contact() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <MapPinIcon className="h-5 w-5 text-muted-foreground" />
-                <p>123 Main St, Anytown USA</p>
+                <p> AIAC, Technopole de l’Aéroport Mohammed V, Nouasser, Casablanca, Maroc</p>
               </div>
               <div className="flex items-center gap-2">
                 <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-                <p>(123) 456-7890</p>
+                <p> 0611286753</p>
               </div>
               <div className="flex items-center gap-2">
                 <MailIcon className="h-5 w-5 text-muted-foreground" />
@@ -64,11 +64,11 @@ export function Contact() {
                 <InstagramIcon className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <Link href="https://www.linkedin.com/company/aimac-it-club/" className="text-muted-foreground hover:text-primary" prefetch={false}>
                 <LinkedinIcon className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <Link href="https://www.instagram.com/aiacit/" className="text-muted-foreground hover:text-primary" prefetch={false}>
                 <GitlabIcon className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
               </Link>
