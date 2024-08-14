@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function MeetTheTeamSection() {
   const teamMembers = [
-    { name: "DAOUDI Elhassan", role: "President", imgSrc: "/pictures/daoudi.png", github: "https://github.com/Daoudielhassan/", linkedin: "https://www.linkedin.com/in/elhassan-daoudi/", mail: "daoudiha6@gmail.com" },
+    { name: "DAOUDI Elhassan", role: "President", imgSrc: "/pictures/daoudi.jpg", github: "https://github.com/Daoudielhassan/", linkedin: "https://www.linkedin.com/in/elhassan-daoudi/", mail: "daoudiha6@gmail.com" },
     { name: "BOUROU Hamza", role: "Vice president", imgSrc: "/pictures/bourou.jpg", github: "#", linkedin: "https://www.linkedin.com/in/hamza-bourou-64689322b/", mail: "bourouhamza9@gmail.com" },
     { name: "HLIAL Laila", role: "Project Manager", imgSrc: "/pictures/laila.jpg", github: "#", linkedin: "https://www.linkedin.com/in/laila-hlial", mail: "lailahlial564@gmail.com" },
     { name: "ELGHABI Imane", role: "UI/UX Designer", imgSrc: "/pictures/elghabi.jpg", github: "#", linkedin: "https://www.linkedin.com/in/imane-elghabi/", mail: "imaneelghabipro@gmail.com" },
