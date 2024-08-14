@@ -1,5 +1,6 @@
 import { HomeComponent } from '@/components/component/HomeComponent';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="container mx-auto flex flex-col items-center justify-center flex-grow">
         <HomeComponent />
         <SpeedInsights />
+        <Analytics />
       </div>
     </main>
   );
