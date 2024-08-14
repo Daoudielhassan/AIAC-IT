@@ -43,11 +43,11 @@ export function Contact() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <MapPinIcon className="h-5 w-5 text-muted-foreground" />
-                <p> AIAC, Technopole de l’Aéroport Mohammed V, Nouasser, Casablanca, Maroc</p>
+                <p>AIAC, Technopole de l’Aéroport Mohammed V, Nouasser, Casablanca, Maroc</p>
               </div>
               <div className="flex items-center gap-2">
                 <PhoneIcon className="h-5 w-5 text-muted-foreground" />
-                <p> 0611286753</p>
+                <p>0611286753</p>
               </div>
               <div className="flex items-center gap-2">
                 <MailIcon className="h-5 w-5 text-muted-foreground" />
@@ -58,9 +58,7 @@ export function Contact() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold">Social Media</h3>
             <div className="flex items-center gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <Link href="https://www.instagram.com/aiacit/" className="text-muted-foreground hover:text-primary" prefetch={false}>
                 <InstagramIcon className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -68,7 +66,7 @@ export function Contact() {
                 <LinkedinIcon className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://www.instagram.com/aiacit/" className="text-muted-foreground hover:text-primary" prefetch={false}>
+              <Link href="https://gitlab.com/aiacit" className="text-muted-foreground hover:text-primary" prefetch={false}>
                 <GitlabIcon className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
               </Link>
@@ -79,6 +77,7 @@ export function Contact() {
     </section>
   );
 }
+
 
 
 function GitlabIcon(props) {
