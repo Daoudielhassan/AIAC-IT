@@ -2,38 +2,33 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="w-full pt-12 md:pt-24 lg:pt-32 bg-primary">
-      <div className="container space-y-10 xl:space-y-16 px-4 md:px-6">
-        <div className="grid gap-4 md:grid-cols-2 md:gap-16">
-          <div>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-primary-foreground">
-              Welcome to the IT Club
-            </h1>
-            <p className="max-w-[700px] text-primary-foreground md:text-xl">
-              Explore the latest technologies, collaborate on exciting projects, and connect with like-minded
-              individuals in our vibrant IT community.
-            </p>
-            <div className="mt-6">
-              <Link
-                href="#"
-                className="inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 py-2 text-sm font-medium text-primary shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                prefetch={false}
-              >
-                Join Now
-              </Link>
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <img
-              src="/pictures/logo.png"
-              width="550"
-              height="550"
-              alt="Hero"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
-            />
+    <header className="hero-section bg-primary pt-12 md:pt-24 lg:pt-32">
+      <div className="container mx-auto px-4 flex flex-col xl:flex-row items-center justify-between space-y-10 xl:space-y-0">
+        <div className="hero-content w-full xl:w-1/2 text-center xl:text-left space-y-6 xl:space-y-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-[3.4rem] 2xl:text-[3.75rem] font-bold tracking-tight text-primary-foreground leading-tight">
+            Welcome to the IT Club
+          </h1>
+          <p className="max-w-full md:text-lg text-primary-foreground leading-relaxed">
+            Explore the latest technologies, collaborate on exciting projects, and connect with like-minded individuals in our vibrant IT community.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="#"
+              className="inline-flex items-center justify-center h-10 px-6 py-2 text-sm font-medium text-white bg-primary rounded-md shadow hover:bg-primary/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              prefetch={false}
+            >
+              Join Now
+            </Link>
           </div>
         </div>
+        <div className="hero-image w-full xl:w-1/2 flex justify-center xl:justify-end">
+          <img
+            src="/pictures/logo.png"
+            alt="IT Club logo, a vibrant and colorful representation of the community"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-full object-cover rounded-xl shadow-lg"
+          />
+        </div>
       </div>
-    </section>
+    </header>
   );
 }
