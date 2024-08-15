@@ -1,3 +1,4 @@
+// Header.jsx
 "use client";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -6,8 +7,8 @@ import { useState } from "react";
 const navItems = [
   { label: "Events", href: "/events" },
   { label: "Projects", href: "/projects" },
-  { label: "Team", href: "/team" },
-  { label: "About", href: "/about" },
+  { label: "Team", href: "#Team" },
+  { label: "Contact", href: "#Contact" },
 ];
 
 export function Header() {
