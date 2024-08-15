@@ -55,7 +55,7 @@ export function Contact() {
                 <h3 className="text-xl font-bold">Contact Info</h3>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <MapPinIcon className="h-5 w-5 text-muted-foreground" />
+                    <MapPinIcon className="h-10 w-10 text-muted-foreground" />
                     <p>
                       AIAC, Technopole de l’Aéroport Mohammed V, Nouasser,
                       Casablanca, Maroc
