@@ -8,22 +8,21 @@ const fontHeading = Bricolage_Grotesque({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-heading',
-  weight: '400', // or the appropriate weight
+  weight: '400',
 });
 
 const fontBody = Space_Mono({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-body',
-  weight: '400', // or the appropriate weight
+  weight: '400',
 });
-
 
 export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/pictures/logo.png" />
+        <link rel="icon" href="/favicon.ico" />
         <title>Welcome to our Club</title>
       </Head>
       <html lang="en">
