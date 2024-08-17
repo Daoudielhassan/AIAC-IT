@@ -151,7 +151,7 @@ export function MeetTheTeamSection() {
                           <LinkedinIcon className="size-4" />
                         </Link>
                         <Link
-                          href={member.mail}
+                          href={`mailto:${member.mail}`}
                           className="text-muted-foreground hover:text-primary"
                           prefetch={false}
                         >

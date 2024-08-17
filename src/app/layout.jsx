@@ -1,6 +1,4 @@
-// This is the root layout component for your Next.js app.
-// Learn more: https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required
-
+import Head from 'next/head';
 import { Bricolage_Grotesque } from 'next/font/google';
 import { Space_Mono } from 'next/font/google';
 import { cn } from '@/lib/utils';
@@ -20,18 +18,25 @@ const fontBody = Space_Mono({
   weight: '400', // or the appropriate weight
 });
 
+
 export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body 
-        className={cn(
-          'antialiased',
-          fontHeading.variable,
-          fontBody.variable
-        )}
-      >
-        {children}
-      </body>
-    </html>
+    <>
+      <Head>
+        <link rel="icon" href="/pictures/logo.png" />
+        <title>Welcome to our Club</title>
+      </Head>
+      <html lang="en">
+        <body 
+          className={cn(
+            'antialiased',
+            fontHeading.variable,
+            fontBody.variable
+          )}
+        >
+          {children}
+        </body>
+      </html>
+    </>
   );
 }
