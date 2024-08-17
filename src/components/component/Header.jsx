@@ -24,7 +24,7 @@ export function Header() {
         <Link href="/" className="flex items-center">
           <img
             src="/pictures/logo.png"
-            className="h-8 w-auto text-primary"
+            className="h-10 w-auto text-primary"
             alt="IT Club Logo"
           />
           <span className="sr-only">IT Club</span>
@@ -36,7 +36,7 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
+              className="text-base font-medium hover:underline underline-offset-4 text-primary-foreground"
             >
               {item.label}
             </Link>
