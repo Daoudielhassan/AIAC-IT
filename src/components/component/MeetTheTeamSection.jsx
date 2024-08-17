@@ -8,7 +8,7 @@ export function MeetTheTeamSection() {
     {
       name: "DAOUDI Elhassan",
       role: "President",
-      imgSrc: "/pictures/daoudi.jpg",
+      imgSrc: "/pictures/DAOUDI.jpg",
       github: "https://github.com/Daoudielhassan/",
       linkedin: "https://www.linkedin.com/in/elhassan-daoudi/",
       mail: "daoudiha6@gmail.com",
@@ -24,7 +24,7 @@ export function MeetTheTeamSection() {
     {
       name: "HLIAL Laila",
       role: "Project Manager",
-      imgSrc: "/pictures/laila.jpg",
+      imgSrc: "/pictures/Laila.jpg",
       github: "#",
       linkedin: "https://www.linkedin.com/in/laila-hlial",
       mail: "lailahlial564@gmail.com",
