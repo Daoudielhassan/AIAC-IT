@@ -7,7 +7,7 @@ export default function projects() {
       <div className="max-w-xl px-4 md:px-0 text-center space-y-4">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Coming Soon</h2>
         <p className="text-muted-foreground text-lg md:text-xl">
-          We're hard at work, building something amazing for you. Stay tuned for our launch!
+          We&apos;re hard at work, building something amazing for you. Stay tuned for our launch!
         </p>
       </div>
     </section>
