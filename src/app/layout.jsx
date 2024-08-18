@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { Bricolage_Grotesque } from 'next/font/google';
 import { Space_Mono } from 'next/font/google';
 import { cn } from '@/lib/utils';
@@ -18,24 +17,27 @@ const fontBody = Space_Mono({
   weight: '400',
 });
 
+// Define the metadata for this layout
+export const metadata = {
+  title: 'Welcome to our Club',
+  description: 'Join us and be part of our community!',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
+
 export default function Layout({ children }) {
   return (
-    <>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <title>Welcome to our Club</title>
-      </Head>
-      <html lang="en">
-        <body 
-          className={cn(
-            'antialiased',
-            fontHeading.variable,
-            fontBody.variable
-          )}
-        >
-          {children}
-        </body>
-      </html>
-    </>
+    <html lang="en">
+      <body 
+        className={cn(
+          'antialiased',
+          fontHeading.variable,
+          fontBody.variable
+        )}
+      >
+        {children}
+      </body>
+    </html>
   );
 }
