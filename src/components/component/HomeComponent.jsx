@@ -7,7 +7,7 @@ import { Contact } from "./contact";
 export function HomeComponent() {
   return (
     <main>
-     <Header />
+      <Header />
       <HeroSection />
       <MeetTheTeamSection />
       <Contact />
