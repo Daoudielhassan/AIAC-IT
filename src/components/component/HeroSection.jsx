@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Input } from "@/components/ui/input";
+import Image from 'next/image';
+
 
 export function HeroSection() {
   const [isFloatingVisible, setFloatingVisible] = useState(false);
@@ -86,7 +88,7 @@ export function HeroSection() {
 
           {/* Hero Image */}
           <div className="hero-image w-full xl:w-1/2 flex justify-center xl:justify-end">
-            <img
+            <Image
               src="/pictures/IT.png"
               alt="IT Club logo, a vibrant and colorful representation of the community"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-full object-cover rounded-2xl shadow-2xl"
