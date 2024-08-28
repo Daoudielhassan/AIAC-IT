@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/component/HeroSection.js", "src/app/layout.js", "src/app/page.js", "src/components/component/Icons.js", "src/components/component/MeetTheTeamSection.js", "src/components/component/FeaturedProjectsSection.js", "src/components/component/EventsSection.js", "src/components/ui/button.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/component/HeroSection.js", "src/app/layout.js", "src/app/page.js", "src/components/component/Icons.js", "src/components/component/MeetTheTeamSection.js", "src/components/ui/button.jsx"],
   "exclude": ["node_modules"]
 }
