@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
-import Image from 'next/image';
 
 
 const navItems = [
@@ -24,15 +23,10 @@ export function Header() {
     <div className="container">
       <header className="px-4 lg:px-6 h-14 flex items-center justify-between bg-background border-b">
         <Link href="/" className="flex items-center">
-        <Image
+          <img
             src="/pictures/logo.png"
             className="h-10 w-auto text-primary"
             alt="IT Club Logo"
-            layout="intrinsic"   // Adjust as needed ('intrinsic', 'fixed', 'responsive')
-            objectFit="contain"  // Handle image fit in the container
-            priority={true}      // Optional: Load image eagerly
-            width={35}          // Define width for the logo
-            height={100}          // Define height for the logo
           />
           <span className="sr-only">IT Club</span>
         </Link>

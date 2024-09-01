@@ -1,31 +1,46 @@
-// app/login/page.js
-'use client';
+// pages/login.js
+"use client";
 
+import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import QuoteColumn from "@/components/component/QuoteColumn";
+import LoginCard from "@/components/component/LoginCard";
 
-export default function Login() {
+export default function LoginPage() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
 
-  const handleLogin = async () => {
-    setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
 
-    // Simulate an authentication request
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // Set a cookie with an expiration time
-    document.cookie = "authToken=true; path=/; max-age=86400; secure"; // Max-age is 1 day
-
-    router.push('/dashboard');
+    try {
+      if (email && password) {
+        console.log('Login successful');
+        router.push('/dashboard');
+      } else {
+        setError('Please enter both email and password');
+      }
+    } catch (err) {
+      setError('Failed to login. Please try again.');
+    }
   };
 
   return (
-    <div>
-      <h1>Login Page</h1>
-      <button onClick={handleLogin} disabled={loading}>
-        {loading ? 'Logging in...' : 'Login'}
-      </button>
+    <div className="flex min-h-screen bg-gray-100">
+      <QuoteColumn />
+      <div className="w-full md:w-1/2 flex items-center justify-center p-6">
+        <LoginCard
+          handleSubmit={handleSubmit}
+          email={email}
+          setEmail={setEmail}
+          password={password}
+          setPassword={setPassword}
+          error={error}
+        />
+      </div>
     </div>
   );
 }
