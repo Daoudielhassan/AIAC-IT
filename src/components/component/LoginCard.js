@@ -47,7 +47,7 @@ const LoginCard = ({ handleSubmit, email, setEmail, password, setPassword, error
       </CardContent>
       <CardFooter className="flex justify-center p-4 bg-gray-50">
         <p className="text-sm text-gray-600">
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <a href="/signup" className="text-primary hover:underline">
             Sign up
           </a>
