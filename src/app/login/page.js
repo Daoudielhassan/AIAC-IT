@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import QuoteColumn from "@/components/component/QuoteColumn";
 import LoginCard from "@/components/component/LoginCard";
 
 export default function Login() {
