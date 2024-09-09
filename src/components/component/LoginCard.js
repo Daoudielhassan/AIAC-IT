@@ -40,17 +40,14 @@ const LoginCard = ({ handleSubmit, email, setEmail, password, setPassword, error
             />
           </div>
           {error && <p className="text-sm text-red-600">{error}</p>}
-          <Button type="submit" className="w-full bg-primary hover:bg-primary-dark text-white py-2 rounded-md">
+          <Button type="submit" className="w-full bg-primary hover:bg-primary-dark text-white text-lg font-serif font-hold tracking-wider rounded-md">
             Login
           </Button>
         </form>
       </CardContent>
       <CardFooter className="flex justify-center p-4 bg-gray-50">
         <p className="text-sm text-gray-600">
-          Don&apos;t have an account?{' '}
-          <a href="/signup" className="text-primary hover:underline">
-            Sign up
-          </a>
+          
         </p>
       </CardFooter>
     </Card>
