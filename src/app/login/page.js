@@ -15,38 +15,49 @@ export default function Login() {
     e.preventDefault();
     setError("");
     setLoading(true);
-
+  
     try {
       if (!email || !password) {
         setError("Please enter both email and password");
         setLoading(false);
         return;
       }
-
-      // Simulate an authentication request
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      // Set a cookie with an expiration time
-      document.cookie = "authToken=true; path=/; max-age=86400; secure"; // Max-age is 1 day
-
-      console.log("Login successful");
-      router.push("/dashboard");
+  
+      const response = await fetch("http://127.0.0.1:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email, password: password }),
+      });
+  
+      const data = await response.json();
+      console.log("Response data:", data);  // Log response data for debugging
+      console.log("Response status:", response.status);  // Log status code
+  
+      if (response.ok) {
+        document.cookie = "authToken=true; path=/; max-age=86400";
+        console.log("Login successful");
+        router.push("/dashboard");
+      } else {
+        setError(data.message || "Failed to login. Please try again.");
+      }
     } catch (err) {
+      console.error("Error:", err);  // Log error details for debugging
       setError("Failed to login. Please try again.");
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div
       className="relative flex min-h-screen bg-cover bg-no-repeat bg-center"
       style={{ backgroundImage: "url(/pictures/bg1.jpg)" }}
     >
-      {/* Background with opacity using ::before */}
       <div className="absolute inset-0 bg-gray-100 opacity-25 z-0"></div>
 
-      {/* Main Content */}
       <div className="relative flex w-full">
         <div className="w-full flex items-center justify-center p-6">
           <LoginCard
@@ -56,7 +67,7 @@ export default function Login() {
             password={password}
             setPassword={setPassword}
             error={error}
-            loading={loading} // Optionally pass loading state to show a spinner or disable the button
+            loading={loading}
           />
         </div>
       </div>
