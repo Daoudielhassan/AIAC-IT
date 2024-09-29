@@ -95,7 +95,7 @@ export function MeetTheTeamSection() {
     },
     {
       name: "MOHADDIB Imane",
-      role: "Events Manage",
+      role: "Events Manager",
       imgSrc: "/pictures/Mohaddib_Imane.jpg",
       github: "#",
       linkedin: "https://www.linkedin.com/in/imane-mohaddib-2048b2299/",
