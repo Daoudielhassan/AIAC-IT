@@ -49,7 +49,7 @@ export function MeetTheTeamSection() {
       name: "CHARKI Safouane",
       role: "Chef dev cell",
       imgSrc: "/pictures/charki.jpg",
-      github: "#",
+      github: "https://github.com/SafouaneCh",
       linkedin: "https://www.linkedin.com/in/safouane-charki/",
       mail: "Safouanecharki3@gmail.com",
     },
