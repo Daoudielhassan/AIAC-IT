@@ -28,7 +28,7 @@ export function HeroSection() {
   // Load members from API with error handling
   const loadMembers = async () => {
     try {
-      const result = await axios.get("http://206.81.22.239:8000/api1");
+      const result = await axios.get("https://206.81.22.239:8000/api1");
       setMembers(result.data);
     } catch (error) {
       console.error("Error loading members:", error);
@@ -39,7 +39,7 @@ export function HeroSection() {
   // Add new member with error handling
   const addMember = async (newMember) => {
     try {
-      const result = await axios.post("http://206.81.22.239:8000/api1", newMember);
+      const result = await axios.post("https://206.81.22.239:8000/api1", newMember);
       setMembers((prevState) => [...prevState, result.data]);
       return result; // Return result for further handling
     } catch (error) {

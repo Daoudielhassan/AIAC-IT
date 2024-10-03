@@ -25,7 +25,7 @@ export function Contact() {
   // Load contacts from API with error handling
   const loadContacts = async () => {
     try {
-      const result = await axios.get("http://206.81.22.239:8000/api2");
+      const result = await axios.get("https://206.81.22.239:8000/api2");
       setContact(result.data);
     } catch (error) {
       console.error("Error loading contacts:", error);
@@ -36,7 +36,7 @@ export function Contact() {
   // Add new contact with error handling
   const addContact = async (newContact) => {
     try {
-      const result = await axios.post("http://206.81.22.239:8000/api2", newContact);
+      const result = await axios.post("https://206.81.22.239:8000/api2", newContact);
       setContact((prevState) => [...prevState, result.data]);
       return result; // Return result for further handling
     } catch (error) {
