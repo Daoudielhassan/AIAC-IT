@@ -2,6 +2,8 @@ import { Bricolage_Grotesque } from 'next/font/google';
 import { Space_Mono } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import './globals.css';
+import 'animate.css'
+
 
 const fontHeading = Bricolage_Grotesque({
   subsets: ['latin'],

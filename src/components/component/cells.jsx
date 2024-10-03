@@ -63,7 +63,7 @@ const cells = [
 ];
 const CellItem = ({ icon, title, description }) => {
   return (
-    <div className="flex flex-col items-center text-center space-y-4 p-6  bg-sky-900">
+    <div className="flex flex-col items-center text-center space-y-4 p-6  bg-sky-900 animate__animated animate__backInLeft">
       <div className="bg-sky-700 rounded-md p-3 flex items-center justify-end ">
         {icon}
       </div>
