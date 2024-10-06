@@ -57,7 +57,7 @@ export function MeetTheTeamSection() {
       name: "BOUSSAS Mohammed",
       role: "CP cell co-chief",
       imgSrc: "/pictures/boussas.png",
-      github: "#",
+      github: "https://github.com/boussas",
       linkedin: "https://ma.linkedin.com/in/mohamed-boussas",
       mail: "mohamedboussas0@gmail.com",
     },
