@@ -22,12 +22,28 @@ export function MeetTheTeamSection() {
       mail: "bourouhamza9@gmail.com",
     },
     {
+      name: "BERNICHI Fatima Zahra",
+      role: "Treasurer",
+      imgSrc: "/pictures/bernichi.jpg",
+      github: "#",
+      linkedin: "http://www.linkedin.com/in/fatima-zahra-bernichi-2634402a5",
+      mail: "Bernichifatimazahra@gmail.com",
+    },
+    {
       name: "HLIAL Laila",
       role: "Project Manager",
       imgSrc: "/pictures/Laila.jpg",
       github: "https://github.com/lailahlial",
       linkedin: "https://www.linkedin.com/in/laila-hlial",
       mail: "lailahlial564@gmail.com",
+    },
+    {
+      name: "MOHADDIB Imane",
+      role: "Events Manager",
+      imgSrc: "/pictures/Mohaddib_Imane.jpg",
+      github: "#",
+      linkedin: "https://www.linkedin.com/in/imane-mohaddib-2048b2299/",
+      mail: "adamel12337@gmail.com",
     },
     {
       name: "ELGHABI Imane",
@@ -37,6 +53,15 @@ export function MeetTheTeamSection() {
       linkedin: "https://www.linkedin.com/in/imane-elghabi/",
       mail: "imaneelghabipro@gmail.com",
     },
+    {
+      name: "RYAHI Ikhlass",
+      role: "Media Manager",
+      imgSrc: "/pictures/ikhlass.jpg",
+      github: "#",
+      linkedin: "https://www.linkedin.com/in/ikhlass-ryahi-0b1592295/",
+      mail: "ikhlassryahi@gmail.com",
+    },
+
     {
       name: "ATIR Ayoub",
       role: "Chef dev cell",
@@ -85,30 +110,7 @@ export function MeetTheTeamSection() {
       linkedin: "http://www.linkedin.com/in/faycal-raghibi-50607a2bb",
       mail: "faycalraghibi0@gmail.com",
     },
-    {
-      name: "BERNICHI Fatima Zahra",
-      role: "Treasurer",
-      imgSrc: "/pictures/bernichi.jpg",
-      github: "#",
-      linkedin: "http://www.linkedin.com/in/fatima-zahra-bernichi-2634402a5",
-      mail: "Bernichifatimazahra@gmail.com",
-    },
-    {
-      name: "RYAHI Ikhlass",
-      role: "Media Manager",
-      imgSrc: "/pictures/ikhlass.jpg",
-      github: "#",
-      linkedin: "https://www.linkedin.com/in/ikhlass-ryahi-0b1592295/",
-      mail: "ikhlassryahi@gmail.com",
-    },
-    {
-      name: "MOHADDIB Imane",
-      role: "Events Manager",
-      imgSrc: "/pictures/Mohaddib_Imane.jpg",
-      github: "#",
-      linkedin: "https://www.linkedin.com/in/imane-mohaddib-2048b2299/",
-      mail: "adamel12337@gmail.com",
-    },
+
   ];
 
   return (
