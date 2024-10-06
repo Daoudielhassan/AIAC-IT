@@ -154,7 +154,8 @@ export function Contact() {
                   </div>
                   <div className="flex items-center gap-2">
                     <MailIcon className="h-5 w-5 text-muted-foreground"/>
-                    <p>info@aiacitclub.com</p>
+                    <p>aiacitclub@outlook.com
+                    </p>
                   </div>
                 </div>
               </div>
