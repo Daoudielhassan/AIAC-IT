@@ -5,7 +5,7 @@ const partners = [
   { id: 4, name: 'CloudWave', logo: '/placeholder.svg?height=100&width=100', url: 'https://cloudwave.example.com' },
 ];
 
-export default function PartnersSection() {
+export function PartnersSection() {
   return (
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">

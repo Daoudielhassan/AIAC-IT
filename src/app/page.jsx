@@ -5,14 +5,13 @@ import { HeroSection } from "@/components/component/HeroSection";
 import { MeetTheTeamSection } from "@/components/component/MeetTheTeamSection";
 import { Contact } from "@/components/component/contact";
 import { Cell } from "@/components/component/cells";
-import { Partners } from "@/components/component/PartnersSection";
-
+import PartnersSection from '@/components/component/PartnersSection';
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen p-4 md:p-3 lg:p-10 bg-background">
       <Header />
       <HeroSection />
-      <Partners />
+      <PartnersSection />
       <Cell />
       <MeetTheTeamSection />
       <Contact />
