@@ -4,7 +4,7 @@ import Image from 'next/image';
 export function PartnersSection() {
   const partners = [
     { id: 1, name: 'Partner 1', logo: '/pictures/DC_Donates_logo_inverted.png', link: 'https://www.datacamp.com/donates' },
-    { id: 2, name: 'Partner 2', logo: '/pictures/adei.png', link: 'https://www.aiac.ma/' },
+    { id: 2, name: 'Partner 2', logo: '/pictures/adei.png', link: 'https://www.onda.ma/' },
 
   ];
 
