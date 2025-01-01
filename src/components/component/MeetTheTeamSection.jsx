@@ -64,7 +64,7 @@ export function MeetTheTeamSection() {
 
     {
       name: "ATIR Ayoub",
-      role: "Chef dev cell",
+      role: "dev cell chief",
       imgSrc: "/pictures/ayoub.png",
       github: "https://github.com/Ayoubater23",
       linkedin: "https://www.linkedin.com/in/ayoub-atir-978a2b255/",
@@ -72,23 +72,15 @@ export function MeetTheTeamSection() {
     },
     {
       name: "CHARKI Safouane",
-      role: "Chef dev cell",
+      role: "dev cell chief",
       imgSrc: "/pictures/charki.jpg",
       github: "https://github.com/SafouaneCh",
       linkedin: "https://www.linkedin.com/in/safouane-charki/",
       mail: "Safouanecharki3@gmail.com",
     },
     {
-      name: "BOUSSAS Mohammed",
-      role: "CP cell co-chief",
-      imgSrc: "/pictures/boussas.png",
-      github: "https://github.com/boussas",
-      linkedin: "https://ma.linkedin.com/in/mohamed-boussas",
-      mail: "mohamedboussas0@gmail.com",
-    },
-    {
       name: "EL MEZIANE Adam",
-      role: "CP cell co-chief",
+      role: "CP cell chief",
       imgSrc: "/pictures/adam.jpg",
       github: "#",
       linkedin: "https://www.linkedin.com/in/adam-el-meziane-53b12a19a/",
