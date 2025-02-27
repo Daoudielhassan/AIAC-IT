@@ -13,7 +13,7 @@ const projectsData = [
     name: "Neural Network & CNNs",
     leader: "Team AI Research",
     mentor: "RAGHIBI Fayçal",
-    details: <b>"Développement et entraînement de réseaux neuronaux convolutionnels pour l'analyse d'images médicales et industrielles."</b>,
+    details: <b>&quot;Développement et entraînement de réseaux neuronaux convolutionnels pour l&apos;analyse d&apos;images médicales et industrielles.&quot;</b>,
     steps: [
       "Collecte et préparation des données",
       "Conception et entraînement du modèle",
@@ -28,7 +28,7 @@ const projectsData = [
     name: "Lab : Vulnérabilité SQL Injection",
     leader: "Team CyberSecurity",
     mentor: "BERNICHI Fatima Zahra",
-    details: <b>"Découverte, exploitation et correction d'une vulnérabilité SQL Injection dans un environnement sécurisé."</b>,
+    details: <b>&quot;Découverte, exploitation et correction d&apos;une vulnérabilité SQL Injection dans un environnement sécurisé.&quot;</b>,
     steps: [
       "Installation de DVWA",
       "Configuration de la base de données",
@@ -42,7 +42,7 @@ const projectsData = [
   {
     name: "Robot d'exploration et détection de plantes",
     leader: "Team Robotics & AI",
-    details: <b>"Ce robot est conçu pour éviter les obstacles sur Mars et détecter et enregistrer l'emplacement d'une plante, quel que soit son type."</b>,
+    details: <b>&quot;Ce robot est conçu pour éviter les obstacles sur Mars et détecter et enregistrer l&apos;emplacement d&apos;une plante, quel que soit son type.&quot;</b>,
     steps: [
       "Installation des dépendances requises",
       "Configuration de YOLOv5s",
@@ -57,7 +57,7 @@ const projectsData = [
     name: "Jeu Développé avec Godot",
     leader: "Team Game Development",
     mentor: "Inconnu",
-    details: <b>"Un jeu développé avec le moteur Godot en GDScript/C#, mettant en avant des mécaniques innovantes et une expérience immersive."</b>,
+    details: <b>&quot;Un jeu développé avec le moteur Godot en GDScript/C#, mettant en avant des mécaniques innovantes et une expérience immersive.&quot;</b>,
     steps: [
       "Conception du gameplay",
       "Développement du moteur de jeu",
@@ -73,22 +73,21 @@ const projectsData = [
     ],
     logo: <FaGamepad size={50} className="text-purple-700" />
   },
-  
-{
-  name: "To-Do List (GitHub Learning)",
-  leader: "Team Web Development",
-  mentor: "GitHub Community",
-  details:<b> "Un projet simple de To-Do List pour aider les membres à apprendre les bases de GitHub, y compris le clonage, le pull et le push de repositories."</b>,
-  steps: [
-    "Création du repository sur GitHub",
-    "Clonage du repository en local",
-    "Développement de la To-Do List en HTML/CSS",
-    "Utilisation des commandes Git pour gérer les versions"
-  ],
-  tools: ["HTML", "CSS", "Git", "GitHub"],
-  image: "/pictures/5.png",
-  logo: <FaDatabase size={50} className="text-pink-600" />
-}
+  {
+    name: "To-Do List (GitHub Learning)",
+    leader: "Team Web Development",
+    mentor: "GitHub Community",
+    details: <b>&quot;Un projet simple de To-Do List pour aider les membres à apprendre les bases de GitHub, y compris le clonage, le pull et le push de repositories.&quot;</b>,
+    steps: [
+      "Création du repository sur GitHub",
+      "Clonage du repository en local",
+      "Développement de la To-Do List en HTML/CSS",
+      "Utilisation des commandes Git pour gérer les versions"
+    ],
+    tools: ["HTML", "CSS", "Git", "GitHub"],
+    image: "/pictures/5.png",
+    logo: <FaDatabase size={50} className="text-pink-600" />
+  }
 ];
 
 export default function Projects() {
