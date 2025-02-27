@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheerful To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://i.pinimg.com/736x/c9/28/63/c928630c938ceb254ac5bfb081b0dbf2.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 400px;
+            position: relative;
+        }
+        h1 {
+            color: #ff6b81;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        input, select {
+            padding: 10px;
+            border: 2px solid #ffc3a0;
+            border-radius: 10px;
+            font-size: 16px;
+            background: #fffbf2;
+        }
+        button {
+            background: #ff9a8b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff6b81;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ffe5ec;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .delete-btn {
+            background: #ff6b81;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .delete-btn:hover {
+            background: #e63946;
+        }
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        small {
+            color: #555;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 To-Do List </h1>
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <input type="datetime-local" id="deadline-input">
+            <select id="category-input">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+            <select id="group-input">
+                <option value="Individual">Individual</option>
+                <option value="Group">Group</option>
+            </select>
+            <button onclick="addTask()">➕ Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script>
+        function addTask() {
+            let taskInput = document.getElementById("task-input");
+            let deadlineInput = document.getElementById("deadline-input");
+            let categoryInput = document.getElementById("category-input");
+            let groupInput = document.getElementById("group-input");
+            let taskText = taskInput.value.trim();
+            let deadlineText = deadlineInput.value;
+            let categoryText = categoryInput.value;
+            let groupText = groupInput.value;
+            if (taskText === "") return;
+            let li = document.createElement("li");
+            li.innerHTML = `<span>${taskText} <small>(Due: ${deadlineText}, Category: ${categoryText}, Type: ${groupText})</small></span> <button class="delete-btn" onclick="removeTask(this)">❌</button>`;
+            document.getElementById("task-list").appendChild(li);
+            taskInput.value = "";
+            deadlineInput.value = "";
+        }
+        function removeTask(button) {
+            button.parentElement.classList.add("fade-out");
+            setTimeout(() => button.parentElement.remove(), 300);
+        }
+    </script>
+</body>
+</html>

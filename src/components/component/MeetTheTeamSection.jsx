@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { GithubIcon, LinkedinIcon, MailIcon } from "./Icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -102,7 +102,6 @@ export function MeetTheTeamSection() {
       linkedin: "http://www.linkedin.com/in/faycal-raghibi-50607a2bb",
       mail: "faycalraghibi0@gmail.com",
     },
-
   ];
 
   return (
@@ -137,31 +136,30 @@ export function MeetTheTeamSection() {
                       <p className="text-sm text-muted-foreground">
                         {member.role}
                       </p>
-                      <div className="flex justify-center gap-4">
-                        <Link
-                          href={member.github}
-                          className="text-muted-foreground hover:text-primary"
-                          prefetch={false}
-                        >
-                          <GithubIcon className="size-4" />
-                        </Link>
-                        <Link
-                          href={member.linkedin}
-                          className="text-muted-foreground hover:text-primary"
-                          prefetch={false}
-                        >
-                          <LinkedinIcon className="size-4" />
-                        </Link>
-                        <Link
-                          href={`mailto:${member.mail}`}
-                          className="text-muted-foreground hover:text-primary"
-                          prefetch={false}
-                        >
-                          <MailIcon className="size-4" />
-                        </Link>
-                      </div>
                     </div>
                   </CardContent>
+
+                  {/* Move CardFooter outside of CardContent */}
+                  <CardFooter className="flex justify-center gap-4 p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-b-lg">
+                    <Link
+                      href={member.github}
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      <GithubIcon className="size-4" />
+                    </Link>
+                    <Link
+                      href={member.linkedin}
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      <LinkedinIcon className="size-4" />
+                    </Link>
+                    <Link
+                      href={`mailto:${member.mail}`}
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      <MailIcon className="size-4" />
+                    </Link>
+                  </CardFooter>
                 </Card>
               ))}
             </div>
