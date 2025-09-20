@@ -9,7 +9,7 @@ export function MeetTheTeamSection() {
       name: "EL HAJOUI mariam",
       role: "President",
       imgSrc: "/pictures/elhajoui.jpg",
-      github: "",
+      github: "https://github.com/Mariaam24",
       linkedin: "https://www.linkedin.com/in/mariam-el-hajoui-87465b32b/",
       mail: "mariamelhajoui04@gmail.com",
     },
@@ -17,9 +17,9 @@ export function MeetTheTeamSection() {
       name: "ABOUZAID abdelmajid",
       role: "Vice president",
       imgSrc: "/pictures/majid.jpg",
-      github: "https://github.com/Hamza-br",
-      linkedin: "https://www.linkedin.com/in/hamza-bourou-64689322b/",
-      mail: "bourouhamza9@gmail.com",
+      github: "https://github.com/Majid5775",
+      linkedin: "https://www.linkedin.com/in/majid-abouzaid-84a57b330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ",
+      mail: "abouzaidmajid57@gmail.com",
     },
  
     {
@@ -28,7 +28,7 @@ export function MeetTheTeamSection() {
       imgSrc: "/pictures/mariem.jpg",
       github: "#",
       linkedin: "https://www.linkedin.com/in/mariem-bissane-061a13338/",
-      mail: "lailahlial564@gmail.com",
+      mail: "mariembissane123@gmail.com",
     },
     {
       name: "OUARRADI assiya ",
@@ -36,16 +36,16 @@ export function MeetTheTeamSection() {
       imgSrc: "/pictures/assiya.jpg",
       github: "#",
       linkedin: "https://www.linkedin.com/in/assiya-ouarradi-%F0%9F%87%B5%F0%9F%87%B8%F0%9F%87%B5%F0%9F%87%B8-992a541a0/",
-      mail: "adamel12337@gmail.com",
+      mail: "Ouarradiassiya24@gmail.com",
     },
     
     {
       name: "EL MAIMOUNI Hajar ",
       role: "Media & design Manager",
       imgSrc: "/pictures/hajar.jpg",
-      github: "#",
+      github: "https://github.com/hajarelmaimouni",
       linkedin: "https://www.linkedin.com/in/hajar-el-maimouni-a1744722b/",
-      mail: "ikhlassryahi@gmail.com",
+      mail: "Hajarelmaimouni12@gmail.com",
     },
 
     {
@@ -60,9 +60,9 @@ export function MeetTheTeamSection() {
       name: "HARBOULI Hajar",
       role: "dev cell chief",
       imgSrc: "/pictures/harbouli.jpg",
-      github: "#",
+      github: "https://github.com/hajarharbouli/IT-CLUB",
       linkedin: "https://www.linkedin.com/in/hajar-harbouli-567462330/",
-      mail: "Safouanecharki3@gmail.com",
+      mail: "Hajarharbouli60c@gmail.com",
     },
     {
       name: "AMJAOUCHE younes",
